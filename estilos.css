@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+
+/*Estilos para pc*/
+@media (max-width: 767px) {
+
+    .contenedor {
+        height: 100vh;
+        text-align: center;
+        padding: 5%;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    button {
+        font-size: large;
+        padding: 0.5em;
+    }
+
+    #yesBtn,
+    #noBtn {
+        position: static;
+        transform: none;
+    }
+
+    img {
+        position: static;
+        transform: none;
+        width: 80%;
+        max-width: 300px;
+    }
+
+}
+
+
+/* Estilos para computadoras */
+@media (min-width: 768px) {
+    .contenedor{
+        background: rgb(122, 38, 104);
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        position: relative;
+
+    }
+
+    p{
+        font-size: xx-large;
+        padding: 15%;
+    }
+
+    button{
+        font-size: xx-large;
+        padding: 0.75em;
+    }
+
+    #yesBtn{
+        transform: translate(-100%,0);
+    }
+
+    #noBtn{
+        position: absolute;
+    }
+
+    img {
+        position: absolute; /* Posicionamiento absoluto con respecto al contenedor */
+        top: 0; /* Coloca el GIF en la parte superior del contenedor */
+        left: 50%; /* Centra horizontalmente el GIF */
+        transform: translateX(-50%); /* Corrige la posición para centrar horizontalmente */
+    }
+
+}
+
+
+/*-------------------------------------------*/
+/*Pruebas*/
+
