@@ -42,12 +42,16 @@ body {
     .contenedor {
         padding: 5%;
     }
-
+    .botones {
+        display: flex;
+    }
     p {
         font-size: large;
     }
 
     button {
+        float: left;
+        margin: 0 15px;
         font-size: large;
         width: 80%;
         max-width: 300px;
@@ -77,10 +81,13 @@ body {
         font-size: xx-large;
     }
 
-    button {
-        font-size: xx-large;
+    .botones button {
+        float: left;
+        margin: 0 15px;
+        font-size: xxx-large;
         width: auto;
     }
+
 
 }
 
