@@ -84,13 +84,13 @@ body {
     .imagen_principal,
     .texto,
     .botones {
-        margin-bottom: 5px;
+        margin-bottom: 2px;
     }
 
 
     /* Botones más grandes */
     button {
-        font-size: 20px;
+        font-size: 13px;
         padding: 10px 15px;
     }
 
