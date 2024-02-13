@@ -1,66 +1,38 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #e8a1dd;
 }
 
 .contenedor {
-    background: rgb(241, 175, 226);
-    height: 100vh;
+    height: 100%;
+    padding: 15%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.imagen_principal {
+    align-self: center;
+}
+
+.texto {
+    text-align: center;
+}
+
+.botones {
+    display: flex;
     justify-content: center;
-    padding: 5%;
-}
-
-p {
-    font-size: 4vw;
-    margin-bottom: 2vh;
-}
-
-button {
-    font-size: 4vw;
-    margin-bottom: 2vh;
-}
-
-#yesBtn,
-#noBtn {
-    width: auto; /* Cambiar de 100% a auto para que los botones no ocupen toda la pantalla */
-}
-
-img {
-    max-width: 80vw;
-    margin-bottom: 2vh;
-}
-
-/* Estilos para PC */
-@media (min-width: 768px) {
-    .contenedor {
-        text-align: center;
-        padding: 15%;
-    }
-
-    p {
-        font-size: xx-large;
-    }
-
-    button {
-        font-size: xx-large;
-    }
-
-    #yesBtn {
-        transform: translate(-100%, 0);
-    }
-
-    #noBtn {
-        position: absolute;
-    }
-
-    img {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }
 
 /* Estilos para teléfono */
