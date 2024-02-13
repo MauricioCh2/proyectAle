@@ -28,11 +28,13 @@ body {
 
 .texto {
     text-align: center;
+    font-size: xx-large;
 }
 
 .botones {
     display: flex;
     justify-content: center;
+    font-size: large;
 }
 
 /* Estilos para teléfono */
@@ -48,6 +50,7 @@ body {
     button {
         font-size: large;
         width: 80%;
+        max-width: 300px;
     }
 
     #yesBtn,
@@ -62,6 +65,23 @@ body {
         width: 80%;
         max-width: 300px;
     }
+}
+
+@media (min-width: 768px) {
+
+    .contenedor {
+        padding: 15%;
+    }
+
+    p {
+        font-size: xx-large;
+    }
+
+    button {
+        font-size: xx-large;
+        width: auto;
+    }
+
 }
 
 /*-------------------------------------------*/
