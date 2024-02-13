@@ -6,6 +6,9 @@
 @media (max-width: 767px) {
 
     .contenedor {
+        background: rgb(241, 175, 226);
+        position: relative;
+
         height: 100vh;
         text-align: center;
         padding: 5%;
@@ -39,7 +42,7 @@
 /* Estilos para computadoras */
 @media (min-width: 768px) {
     .contenedor{
-        background: rgb(122, 38, 104);
+        background: rgb(241, 175, 226);
         width: 100vw;
         height: 100vh;
         text-align: center;

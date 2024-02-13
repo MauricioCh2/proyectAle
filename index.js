@@ -1,13 +1,27 @@
 const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click',function () { //que va a pasar si se pulsa el boton si
-    alert('Jaja que cringe el vato puso  uwu')
+    Swal.fire({
+        title: 'JAJAJA ',
+        text: 'que cringe el vato puso uwu',
+        icon: 'aqui  puede ir una imagen',
+        confirmButtonText: 'Si,soy un amor',
+        cancelButtonText: 'No, soy uan carepicha'
+    })
 });
 
 const noBtn = document.querySelector('#noBtn');
 let contador = 0;
 
 noBtn.addEventListener('mouseover', function () { //que va a pasar si se PONE el cursor sobre el boton no
+    escapar();
+})
+noBtn.addEventListener('touchstart', function() {
+    escapar();
+})
+
+
+function  escapar(){
     const randomX = parseInt(Math.random()*100);
     const randomY = parseInt(Math.random()*100);
     noBtn.style.setProperty('top',randomY+'%');
@@ -19,10 +33,9 @@ noBtn.addEventListener('mouseover', function () { //que va a pasar si se PONE el
     if (contador === 10) {
         console.log("estoy contando: "+ contador);
         mostrarAlertaCont();
-        contador == 0;
+        contador = 0;
     }
-})
-
+}
 //Pruebas----------------------------------------------
 function alertaPruebaClick() {
     return Swal.fire({
