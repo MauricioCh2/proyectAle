@@ -13,29 +13,39 @@ yesBtn.addEventListener('click',function () { //que va a pasar si se pulsa el bo
 const noBtn = document.querySelector('#noBtn');
 let contador = 0;
 
-noBtn.addEventListener('mouseover', function () { //que va a pasar si se PONE el cursor sobre el boton no
-    escapar();
-})
-noBtn.addEventListener('touchstart', function() {
-    escapar();
-})
+function escapar() {
 
+    // Obtener contenedor
+    const contenedor = document.querySelector(".contenedor");
 
-function  escapar(){
-    const randomX = parseInt(Math.random()*100);
-    const randomY = parseInt(Math.random()*100);
-    noBtn.style.setProperty('top',randomY+'%');
-    noBtn.style.setProperty('left',randomX+'%');
-    noBtn.style.setProperty('transform',`translate(-${randomX}%,-${randomY}%)`);
+    // Dimensiones máximas
+    const maxX = contenedor.clientWidth + "px";
+    const maxY = contenedor.clientHeight + "px";
 
+    // Coordenadas aleatorias
+    const x = Math.random() * 100 + "%";
+    const y = Math.random() * 100 + "%";
+
+    // Asignar posiciones
+    noBtn.style.position = "absolute";
+    noBtn.style.left = x;
+    noBtn.style.top = y;
+
+    // Quitar transformadas
+    noBtn.style.transform = "none";
+
+    // Contador y alerta
     contador++;
-
-    if (contador === 10) {
-        console.log("estoy contando: "+ contador);
+    if(contador === 10) {
         mostrarAlertaCont();
         contador = 0;
     }
+
 }
+
+// Llamar función al hacer hover o tocar
+noBtn.addEventListener("mouseover", escapar);
+noBtn.addEventListener("touchstart", escapar);
 //Pruebas----------------------------------------------
 function alertaPruebaClick() {
     return Swal.fire({
