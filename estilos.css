@@ -45,24 +45,25 @@ body {
     .botones {
         display: flex;
     }
-    p {
-        font-size: large;
-    }
-
     button {
         float: left;
-        margin: 0 10px;
+        /*margin: 0 10px;*/
         font-size: large;
         width: 80%;
         max-width: 300px;
-    }
+        margin-bottom: 5px;
+        /*width: 100%;*/
+    }#yesBtn,
+     #noBtn {
+         position: static;
+         transform: none;
+     }
 
-    #yesBtn,
-    #noBtn {
-        position: static;
-        transform: none;
-    }
 
+
+    .imagen_principal {
+        margin-bottom: 5px;
+    }
     img {
         align-content: center;
         position: static;
@@ -70,6 +71,16 @@ body {
         width: 80%;
         max-width: 300px;
     }
+
+    p {
+        font-size: large;
+        margin-bottom: 5px;
+    }
+
+
+
+
+
 }
 
 @media (min-width: 768px) {
