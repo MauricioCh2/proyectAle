@@ -39,49 +39,58 @@ body {
 
 /* Estilos para teléfono */
 @media (max-width: 767px) {
+    /*.contenedor {*/
+    /*    max-width: 300px;*/
+    /*    margin-bottom: 5px;*/
+    /*}*/
+    /*.botones {*/
+    /*    display: flex;*/
+    /*}*/
+    /*button {*/
+
+    /*}#yesBtn,*/
+    /* #noBtn {*/
+    /*     position: static;*/
+    /*     transform: none;*/
+
+    /*         float: left;*/
+    /*         !*margin: 0 10px;*!*/
+    /*         font-size: large;*/
+    /*         width: 100%;*/
+    /*         max-width: 300px;*/
+    /*         margin-bottom: 15px;*/
+    /*         !*width: 100%;*!*/
+    /* }*/
+
+
+
+    /*.imagen_principal {*/
+    /*    margin-bottom: 5px;*/
+
+    /*    align-content: center;*/
+    /*    position: static;*/
+    /*    transform: none;*/
+    /*    width: 80%;*/
+    /*    max-width: 300px;*/
+    /*}*/
+    /*img {*/
+
+    /*}*/
+
+    /*p {*/
+    /*    font-size: large;*/
+    /*    margin-bottom: 5px;*/
+    /*}*/
+
     .contenedor {
-        max-width: 300px;
-        margin-bottom: 5px;
+        padding: 5%; /* Antes era 15% */
     }
+
+    .imagen_principal,
+    .texto,
     .botones {
-        display: flex;
+        margin-bottom: 10px; /* Antes 20px */
     }
-    button {
-
-    }#yesBtn,
-     #noBtn {
-         position: static;
-         transform: none;
-
-             float: left;
-             /*margin: 0 10px;*/
-             font-size: large;
-             width: 100%;
-             max-width: 300px;
-             margin-bottom: 15px;
-             /*width: 100%;*/
-     }
-
-
-
-    .imagen_principal {
-        margin-bottom: 5px;
-
-        align-content: center;
-        position: static;
-        transform: none;
-        width: 80%;
-        max-width: 300px;
-    }
-    img {
-
-    }
-
-    p {
-        font-size: large;
-        margin-bottom: 5px;
-    }
-
 
 
 
