@@ -77,10 +77,10 @@ body {
 
     /*}*/
 
-    /*p {*/
-    /*    font-size: large;*/
-    /*    margin-bottom: 5px;*/
-    /*}*/
+    p {
+        font-size: large;
+        margin-bottom: 5px;
+    }
 
     .contenedor {
         padding: 5%; /* Antes era 15% */
