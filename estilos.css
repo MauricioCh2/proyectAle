@@ -40,7 +40,8 @@ body {
 /* Estilos para teléfono */
 @media (max-width: 767px) {
     .contenedor {
-        padding: 2%;
+        max-width: 300px;
+        margin-bottom: 5px;
     }
     .botones {
         display: flex;
