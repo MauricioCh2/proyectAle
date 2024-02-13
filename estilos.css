@@ -77,22 +77,38 @@ body {
 
     /*}*/
 
-    p {
-        font-size: large;
-        margin-bottom: 5px;
-    }
-
     .contenedor {
-        padding: 5%; /* Antes era 15% */
+        padding: 3%;
     }
 
     .imagen_principal,
     .texto,
     .botones {
-        margin-bottom: 10px; /* Antes 20px */
-        float: left;
-                 /*margin: 0 10px;*/
-        font-size: large;
+        margin-bottom: 5px;
+    }
+
+
+    /* Botones más grandes */
+    button {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    /* Juntos en columna*/
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    /* Sin float para que no se salgan */
+    .imagen_principal,
+    .texto,
+    .botones {
+        float: none;
     }
 
 
