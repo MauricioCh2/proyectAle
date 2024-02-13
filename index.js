@@ -3,7 +3,7 @@ const yesBtn = document.querySelector('#yesBtn');
 yesBtn.addEventListener('click',function () { //que va a pasar si se pulsa el boton si
     Swal.fire({
         title: 'JAJAJA ',
-        text: 'que cringe el vato puso uwu',
+        text: 'que cringe el vato puso uwu-----------------------',
         icon: 'aqui  puede ir una imagen',
         confirmButtonText: 'Si,soy un amor',
         cancelButtonText: 'No, soy uan carepicha'
