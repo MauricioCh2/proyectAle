@@ -1,16 +1,71 @@
-*{
+* {
     margin: 0;
 }
 
-/*Estilos para pc*/
-@media (max-width: 767px) {
+.contenedor {
+    background: rgb(241, 175, 226);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
 
+p {
+    font-size: 4vw;
+    margin-bottom: 2vh;
+}
+
+button {
+    font-size: 4vw;
+    margin-bottom: 2vh;
+}
+
+#yesBtn,
+#noBtn {
+    width: auto; /* Cambiar de 100% a auto para que los botones no ocupen toda la pantalla */
+}
+
+img {
+    max-width: 80vw;
+    margin-bottom: 2vh;
+}
+
+/* Estilos para PC */
+@media (min-width: 768px) {
     .contenedor {
-        background: rgb(241, 175, 226);
-        position: relative;
-
-        height: 100vh;
         text-align: center;
+        padding: 15%;
+    }
+
+    p {
+        font-size: xx-large;
+    }
+
+    button {
+        font-size: xx-large;
+    }
+
+    #yesBtn {
+        transform: translate(-100%, 0);
+    }
+
+    #noBtn {
+        position: absolute;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Estilos para teléfono */
+@media (max-width: 767px) {
+    .contenedor {
         padding: 5%;
     }
 
@@ -20,7 +75,7 @@
 
     button {
         font-size: large;
-        padding: 0.5em;
+        width: 80%;
     }
 
     #yesBtn,
@@ -35,48 +90,7 @@
         width: 80%;
         max-width: 300px;
     }
-
 }
-
-
-/* Estilos para computadoras */
-@media (min-width: 768px) {
-    .contenedor{
-        background: rgb(241, 175, 226);
-        width: 100vw;
-        height: 100vh;
-        text-align: center;
-        position: relative;
-
-    }
-
-    p{
-        font-size: xx-large;
-        padding: 15%;
-    }
-
-    button{
-        font-size: xx-large;
-        padding: 0.75em;
-    }
-
-    #yesBtn{
-        transform: translate(-100%,0);
-    }
-
-    #noBtn{
-        position: absolute;
-    }
-
-    img {
-        position: absolute; /* Posicionamiento absoluto con respecto al contenedor */
-        top: 0; /* Coloca el GIF en la parte superior del contenedor */
-        left: 50%; /* Centra horizontalmente el GIF */
-        transform: translateX(-50%); /* Corrige la posición para centrar horizontalmente */
-    }
-
-}
-
 
 /*-------------------------------------------*/
 /*Pruebas*/

@@ -5,8 +5,8 @@ yesBtn.addEventListener('click',function () { //que va a pasar si se pulsa el bo
         title: 'JAJAJA ',
         text: 'que cringe el vato puso uwu-----------------------',
         icon: 'aqui  puede ir una imagen',
-        confirmButtonText: 'Si,soy un amor',
-        cancelButtonText: 'No, soy uan carepicha'
+        confirmButtonText: 'xd',
+        cancelButtonText: 'xd'
     })
 });
 
