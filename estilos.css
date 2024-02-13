@@ -46,30 +46,34 @@ body {
         display: flex;
     }
     button {
-        float: left;
-        /*margin: 0 10px;*/
-        font-size: large;
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 15px;
-        /*width: 100%;*/
+
     }#yesBtn,
      #noBtn {
          position: static;
          transform: none;
+
+             float: left;
+             /*margin: 0 10px;*/
+             font-size: large;
+             width: 100%;
+             max-width: 300px;
+             margin-bottom: 15px;
+             /*width: 100%;*/
      }
 
 
 
     .imagen_principal {
         margin-bottom: 5px;
-    }
-    img {
+
         align-content: center;
         position: static;
         transform: none;
         width: 80%;
         max-width: 300px;
+    }
+    img {
+
     }
 
     p {
