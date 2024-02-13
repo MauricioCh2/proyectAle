@@ -51,7 +51,7 @@ body {
 
     button {
         float: left;
-        margin: 0 15px;
+        margin: 0 10px;
         font-size: large;
         width: 80%;
         max-width: 300px;
@@ -64,6 +64,7 @@ body {
     }
 
     img {
+        align-content: center;
         position: static;
         transform: none;
         width: 80%;
