@@ -22,18 +22,20 @@ function escapar() {
     // Obtener contenedor
     const contenedor = document.querySelector(".contenedor");
 
-    // Dimensiones máximas
-    const maxX = contenedor.clientWidth-10 + "px";
-    const maxY = contenedor.clientHeight-10 + "px";
+    // Obtener dimensiones
+    const maxX = contenedor.clientWidth - noBtn.clientWidth;
+    const maxY = contenedor.clientHeight - noBtn.clientHeight;
 
-    // Coordenadas aleatorias
-    const x = Math.random() * 100 + "%";
-    const y = Math.random() * 100 + "%";
+    // Coordenadas aleatorias limitadas
+    const x = Math.random() * maxX ;
+    const y = Math.random() * maxY;
 
-    // Asignar posiciones
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+
+
     noBtn.style.position = "absolute";
-    noBtn.style.left = x;
-    noBtn.style.top = y;
+
 
     // Quitar transformadas
     noBtn.style.transform = "none";
