@@ -61,9 +61,12 @@ body {
         height: auto;
         width: 80%;
         max-width: 280px;
+        line-height: 1.2;
+        text-align: center;
+
 
         display: flex;
-        font-size: 10px;
+        font-size: 18px;
         padding: 4%;
         /*width: 100%;*/
     }
@@ -89,7 +92,7 @@ body {
     .botones button {
         float: left;
         margin: 0 15px;
-        font-size: xxx-large;
+        font-size: xx-large;
         width: auto;
     }
 
