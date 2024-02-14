@@ -2,12 +2,12 @@ const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click',function () { //que va a pasar si se pulsa el boton si
     Swal.fire({
-        title: 'TITULO',
-        text: 'texto',
-        icon: 'aqui  puede ir una imagen',
+        title: 'Vos y yo',
+        text: 'Vos y yo cuando vivamos juntos y me re jodas, mira es negro como vo',
+        icon: 'resources/cuandoSi.jpg',
         confirmButtonText: 'boton de confirmar',
         cancelButtonText: 'boton de cancelar',
-        timer: 2000,
+        timer: 5000,
         showConfirmButton: false
     }).then(()=>{
         window.location.href = 'carta.html';
@@ -23,8 +23,8 @@ function escapar() {
     const contenedor = document.querySelector(".contenedor");
 
     // Dimensiones máximas
-    const maxX = contenedor.clientWidth-25 + "px";
-    const maxY = contenedor.clientHeight-25 + "px";
+    const maxX = contenedor.clientWidth-10 + "px";
+    const maxY = contenedor.clientHeight-10 + "px";
 
     // Coordenadas aleatorias
     const x = Math.random() * 100 + "%";
@@ -51,39 +51,22 @@ function escapar() {
 noBtn.addEventListener("mouseover", escapar);
 noBtn.addEventListener("touchstart", escapar);
 //Pruebas----------------------------------------------
-function alertaPruebaClick() {
-    return Swal.fire({
-        title: 'Éxito',
-        text: 'a ver si cierto...',
-        icon: 'success',
-        timer: 2000,
-        showConfirmButton: false
-    })
-        .then(() => {
-            window.location.href = "https://www.ubereats.com/cr";
-        });
-}
 
 function alertaCancelar() {
     Swal.fire(
         'Cancelado',
-        'Cerraste el modal',
+        'aca no deberias estar',
         'error'
     )
 }
 
 function mostrarAlertaCont() {
     Swal.fire({
-        title: 'A ver a ver ',
-        text: 'Por que no me compras unas papas',
-        icon: 'has feliz a este pobre niño',
+        title: '>:(',
+        text: 'Ok puto, le das al no, come pija',
+        icon: '/resources/cuandoNo.jpg',
         confirmButtonText: 'Si,soy un amor',
         cancelButtonText: 'No, soy uan carepicha'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            alertaPruebaClick()
-        } else {
-            alertaCancelar()
-        }
     })
+
 }
