@@ -53,6 +53,9 @@ body {
         float: left;
     }
 
+    .imagen_principal{
+        max-width: 80%;
+    }
     button {
         display: flex;
         font-size: 10px;

@@ -41,12 +41,12 @@ img {
 @media (max-width: 767px) {
 
     .contenedor {
-        padding: 3%;
+        padding: 2%;
     }
 
     img{
         max-width: 100%;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
         float: left;
     }
 
