@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'coquette';
+    src: url('../resources/soopafre.ttf') format('truetype');
+}
+html,
+body {
+    height: 100%;
+    background-color: #dbcff2;
+    font-family: 'coquette', sans-serif;
+}
+.contenedor {
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+/*.scroll {*/
+/*    height: 100%;*/
+/*    padding: 15%;*/
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+
+/* Estilos para teléfono */
+@media (max-width: 767px) {
+
+    .contenedor {
+        padding: 3%;
+    }
+
+    img{
+        max-width: 80%;
+        margin-bottom: 2px;
+        float: left;
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+
+    .contenedor {
+        padding: 15%;
+    }
+
+    p {
+        font-size: xx-large;
+    }
+
+
+
+
+}

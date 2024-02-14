@@ -3,16 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'coquette';
+    src: url('../resources/soopafre.ttf') format('truetype');
+}
 html,
 body {
     height: 100%;
+    background-color: #dbcff2;
+    font-family: 'coquette', sans-serif;
 }
 
-body {
-    background-color: #e8a1dd;
-    /*font-family: ;*/
-}
 
 .contenedor {
     height: 100%;
@@ -42,7 +43,7 @@ body {
 @media (max-width: 767px) {
 
     .contenedor {
-        padding: 3%;
+        padding: 5%;
     }
 
     .imagen_principal,
