@@ -23,8 +23,8 @@ function escapar() {
     const contenedor = document.querySelector(".contenedor");
 
     // Dimensiones máximas
-    const maxX = contenedor.clientWidth-15 + "px";
-    const maxY = contenedor.clientHeight-15 + "px";
+    const maxX = contenedor.clientWidth-25 + "px";
+    const maxY = contenedor.clientHeight-25 + "px";
 
     // Coordenadas aleatorias
     const x = Math.random() * 100 + "%";
