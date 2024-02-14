@@ -55,7 +55,7 @@ body {
 
     .imagen_principal img{
         padding: 10px;
-        width: calc(100% - 20px);
+        width: calc(100% - 50px);
     }
     button {
         display: flex;
