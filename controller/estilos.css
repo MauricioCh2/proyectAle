@@ -11,6 +11,7 @@ body {
 
 body {
     background-color: #e8a1dd;
+    /*font-family: ;*/
 }
 
 .contenedor {
@@ -39,43 +40,6 @@ body {
 
 /* Estilos para teléfono */
 @media (max-width: 767px) {
-    /*.contenedor {*/
-    /*    max-width: 300px;*/
-    /*    margin-bottom: 5px;*/
-    /*}*/
-    /*.botones {*/
-    /*    display: flex;*/
-    /*}*/
-    /*button {*/
-
-    /*}#yesBtn,*/
-    /* #noBtn {*/
-    /*     position: static;*/
-    /*     transform: none;*/
-
-    /*         float: left;*/
-    /*         !*margin: 0 10px;*!*/
-    /*         font-size: large;*/
-    /*         width: 100%;*/
-    /*         max-width: 300px;*/
-    /*         margin-bottom: 15px;*/
-    /*         !*width: 100%;*!*/
-    /* }*/
-
-
-
-    /*.imagen_principal {*/
-    /*    margin-bottom: 5px;*/
-
-    /*    align-content: center;*/
-    /*    position: static;*/
-    /*    transform: none;*/
-    /*    width: 80%;*/
-    /*    max-width: 300px;*/
-    /*}*/
-    /*img {*/
-
-    /*}*/
 
     .contenedor {
         padding: 3%;
@@ -85,33 +49,20 @@ body {
     .texto,
     .botones {
         margin-bottom: 2px;
+        float: left;
     }
 
-
-    /* Botones más grandes */
     button {
+        display: flex;
         font-size: 10px;
-        padding: 8px 10px;
+        padding: 4%;
+        width: 100%;
     }
 
-    /* Juntos en columna*/
     .botones {
         display: flex;
         flex-direction: column;
     }
-
-    button {
-        width: 100%;
-    }
-
-    /* Sin float para que no se salgan */
-    .imagen_principal,
-    .texto,
-    .botones {
-        float: none;
-    }
-
-
 
 
 }

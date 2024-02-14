@@ -2,11 +2,15 @@ const yesBtn = document.querySelector('#yesBtn');
 
 yesBtn.addEventListener('click',function () { //que va a pasar si se pulsa el boton si
     Swal.fire({
-        title: 'JAJAJA ',
-        text: 'que cringe el vato puso uwu-----------------------',
+        title: 'TITULO',
+        text: 'texto',
         icon: 'aqui  puede ir una imagen',
-        confirmButtonText: 'xd',
-        cancelButtonText: 'xd'
+        confirmButtonText: 'boton de confirmar',
+        cancelButtonText: 'boton de cancelar',
+        timer: 2000,
+        showConfirmButton: false
+    }).then(()=>{
+        window.location.href = 'carta.html';
     })
 });
 
@@ -19,8 +23,8 @@ function escapar() {
     const contenedor = document.querySelector(".contenedor");
 
     // Dimensiones máximas
-    const maxX = contenedor.clientWidth + "px";
-    const maxY = contenedor.clientHeight + "px";
+    const maxX = contenedor.clientWidth-15 + "px";
+    const maxY = contenedor.clientHeight-15 + "px";
 
     // Coordenadas aleatorias
     const x = Math.random() * 100 + "%";
