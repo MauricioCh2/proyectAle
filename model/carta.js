@@ -1,8 +1,119 @@
+const mensajes = [
+    "te amo",
+    "sos el amor de mi vida",
+    "estoy tan feliz de tenerte",
+    "es un orgullo decir que eres mi novio",
+    "hueles a bolas, báñate porfa",
+    "hace cuanto no t bañas ya?",
+    "deja el lol Javier, eso es de putos",
+    "sos el amor de mi vida",
+    "vení te como a besitos la boca precioso",
+    "sos tan bello",
+    "tu sonrisa es mi mayor debilidad",
+    "tus ojitos son las estrellas más bellas",
+    "si vos fueras brillitos, yo sería yo porque amo los brillitos",
+    "vos eras lo que faltaba en mi vida para ser feliz",
+    "me encantas más de lo que tu mente de tonto puede llegar a pensar",
+    "sos mi vida, mi existencia, mi todo",
+    "sos la luz en mi oscuridad, aunque seas negro",
+    "amo estar con vos",
+    "amo cada momento a tu lado",
+    "serás por siempre mi amor eterno",
+    "eres tan perfecto",
+    "perfecto como una canción de Melanie",
+    "sos un sueño hecho realidad",
+    "jamás creí que amaría de esa forma a alguien",
+    "sos mi prioridad, vos vos vos y nadie más",
+    "con vos a mí lado me siento capaz de cualquier cosa",
+    "nuestras almas están unidas, jamás van a separarse",
+    "tu voz es una melodía tan bella y única que no puedo parar de oír",
+    "mi corazón late por ti, te lo enseño? boe",
+    "sos la personificación de la perfección",
+    "mi alma te pertenece, eres dueño de cada uno de mis sentimientos",
+    "vos y yo estamos destinados a estar juntos",
+    "sos mi refugio cuando siento que ya no puedo más ",
+    "cada día te amo más",
+    "sos mi lugar favorito",
+    "posta báñate javier, tremendo olor a bolas",
+    "cada día me enamoro más de esos ojitos preciosos",
+    "siempre serás la casualidad más maravillosa",
+    "y si no soy el amor de tu vida, al menos espero lograr hacerte tan feliz que no quieras a otra persona",
+    "te dedicaría mis canciones favoritas una y otra vez sin arrepentirme nunca",
+    "somos sol y luna",
+    "le das sentido a mi vida",
+    "como vos ninguno",
+    "como me encanta cada pelotudez que decís",
+    "eres el pelotudito más perfecto y hermoso",
+    "sé que nunca nos dejaremos atrás",
+    "y sí esto termina, que sepas que marcaste mi alma y no podré sacarte jamás de ahí",
+    "cuando tengamos todo lo que soñamos y decimos cuando nos ponemos sentimentales, sé que funcionaremos mejor",
+    "gracias por aguantarme a pesar de que ni yo me aguanto",
+    "gracias por aceptarme tal y como soy",
+    "sos mi esposito bebito lindo mua mua",
+    "me mata no poder estarte abrazando ahorita mismo",
+    "esta noche yo te subo la patita, mi amor",
+    "no te imaginas la felicidad que siento cada vez que me contas algo",
+    "gracias por amarme a pesar de que ni yo misma me quiero",
+    "y si me lastimas cariño, está bien, podremos arreglarlo juntos",
+    "en verdad intento mejorar para no perderte",
+    "no quiero que dejes de ser vos",
+    "en otra vida vos serias un carpincho y yo un conejito blanco",
+    "en un día me hiciste sentir cosas que no había sentido en toda mi vida",
+    "me dejarías maquillarte y dejarte bien bonita?",
+    "eres vos, sos el indicado",
+    "eres mi recuerdo más bello del 2023",
+    "y si luego de cumplir 1 año, llegamos a 50 más?",
+    "estoy tan jodidamente enamorada de ti",
+    "sé que no soy la primera en tu vida, pero espero ser la última",
+    "juramos que seríamos vos y yo por siempre",
+    "toma mi mano, toma mi vida entera también, por que no puedo evitar enamorarme de ti",
+    "con vos me siento como en casa",
+    "nada podrá expresar jamás el dolor cuando siento que te estoy perdiendo",
+    "por favor, no te bañas nunca",
+    "quieres ser mi pinwi?",
+    "mi verdadera intención contigo siempre será darte el amor más puro y hacerte feliz hasta que tengamos 90 años",
+    "me das las ganas de vivir que ni mi papá me daba",
+    "en el momento en que me dijiste boliviana, te juro que sentí esa conexión, ese flechazo de amor",
+    "siempre serás mi peruano que se parece a shark boy favorito",
+    "de verdad mi mayor sueño es ver el atardecer en medio de un campo de tulipanes, arrecostada en tu pecho mientras sostengo tu mano",
+    "te vas a casar conmigo, es advertencia",
+    "sé que vamos a construir juntos la vida que tanto anhelamos tener",
+    "me gusta pensar que también amas cada pequeño mensaje que te mando todos los días",
+    "creo que nunca supe lo que significa la felicidad hasta que llegaste vos a mi vida",
+    "¿como es posible amar de esa forma a una persona?",
+    "quiero crecer con vos",
+    "quiero que nuestro 'para siempre' realmente sea para siempre",
+    "quiero pasar los momentos más especiales de mi vida a tu lado",
+    "quiero que seas vos, nadie más que vos",
+    "quiero que nuestros amigos se sorprendan de vernos juntos aún",
+    "quiero que nuestra historia jamás termine",
+    "quiero ser la razón por la cual creas que los 'para siempre' realmente existen",
+    "quiero que yo sea tu último pensamiento antes de dormir, así como tu eres el mío",
+    "quiero ser yo tu último amor",
+    "puede que no nos veamos ningún día, pero aún así yo te amo todos los días (lo haré siempre)",
+    "sé que no te digo todos los días lo agradecida que estoy de tenerte, pero realmente lo estoy, estoy realmente extasiada por tenerte en mi vida todos los días",
+    "vos sos la única persona con la que puedo estar vulnerable y sé que estaré segura",
+    "felicidad tiene 9 letras, la mía tiene 6",
+    "el lugar que tienes en mi corazón nadie jamás va a quitártelo, es imposible que alguien logre en mí todo lo que vos hiciste",
+    "eres la melodía que le da sentido a los latidos de mi corazón",
+    "cuando me pregunten quién fue mi primer gran amor, seré tan feliz de estirar mi mano y que estés sentado a mi lado",
+    "iría hasta argentina, hasta el fin del mundo, a donde sea por ti",
+    "detendría el tiempo solo para mirarte todo el día"
+];
 
-document.getElementById('miOso').addEventListener('click', function() {
-    var cuadroTexto = document.getElementById('cuadroTexto');
-    cuadroTexto.classList.remove('oculto');
-    setTimeout(function() {
-        cuadroTexto.classList.add('oculto');
-    }, 3000); // Desaparece después de 3 segundos (3000 milisegundos)
+// Obtener referencia a la imagen
+const miOso = document.getElementById("miOso");
+
+// Asignar manejador de click
+miOso.addEventListener("click", () => {
+
+    // Obtener un indice aleatorio
+    const indiceAleatorio = Math.floor(Math.random() * mensajes.length);
+
+    Swal.fire({
+        title: 'Osito dice: ',
+        text: mensajes[indiceAleatorio]
+
+    })
+
 });

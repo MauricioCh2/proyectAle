@@ -14,7 +14,7 @@ yesBtn.addEventListener('click',function () { //que va a pasar si se pulsa el bo
         timer: 5000,
         showConfirmButton: false
     }).then(()=>{
-        // window.location.href = 'carta.html';
+        window.location.href = 'carta.html';
     })
 });
 
@@ -58,13 +58,6 @@ noBtn.addEventListener("mouseover", escapar);
 noBtn.addEventListener("touchstart", escapar);
 //Pruebas----------------------------------------------
 
-function alertaCancelar() {
-    Swal.fire(
-        'Cancelado',
-        'aca no deberias estar',
-        'error'
-    )
-}
 
 function mostrarAlertaCont() {
     let html =`
@@ -79,7 +72,6 @@ function mostrarAlertaCont() {
     Swal.fire({
         html: html,
         confirmButtonText: 'Si,soy un amor',
-        cancelButtonText: 'No, soy uan carepicha'
     })
 
 }
