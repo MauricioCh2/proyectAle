@@ -42,10 +42,10 @@ img {
     position: relative;
 }
 .osito img{
+    max-width: 40%;
     position: absolute;
-    bottom: 0;
+    top: 100px;
     left: 0;
-
 }
 
 
