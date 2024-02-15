@@ -26,7 +26,20 @@ body {
 
 .imagen_principal {
     align-self: center;
+    position: relative;
 }
+.fondo {
+    width: 100%;
+}
+
+.encima {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 100%;
+
+}
+
 
 .texto {
     text-align: center;
