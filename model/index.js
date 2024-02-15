@@ -66,7 +66,7 @@ function mostrarAlertaCont() {
     Swal.fire({
         title: '>:(',
         text: 'Ok puto, le das al no, come pija',
-        icon: '/resources/cuandoNo.jpg',
+        icon: 'resources/cuandoNo.jpg',
         confirmButtonText: 'Si,soy un amor',
         cancelButtonText: 'No, soy uan carepicha'
     })
